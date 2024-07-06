@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 24px;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    min-height: 100dvh;
+    width: 100dvw;
+    color: aliceblue;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 700;
+}
+* ::-webkit-scrollbar {
+    width: 0; 
+    height: 0; 
+}
+:root{
+    --acceint: rgba(233, 5, 51, 0.833);
+}
+* ::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Make scrollbar thumb transparent */
+}
+
+* ::-webkit-scrollbar-track {
+    background-color: transparent; 
+}
+.content{
+    overflow: hidden;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 32px 0px;
+}
+span{
+    color: var(--acceint);
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    
+}
+.Banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background-image: url('./assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.Banner p{
+    font-size: 2rem;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.Banner p button{
+    font-size: 1rem;
+    padding: 10px;
+    background: transparent;
+    border-radius: 20px;
+    height: 60px;
+    cursor: pointer;
+    color: var(--acceint);
+    border: 1px solid var(--acceint);
+    z-index: 5;
+    width: 280px;
+    transition: 0.5s ease-in-out;
+    margin-top: 30px;
+}
+.Banner p button:hover{
+    background-color: var(--acceint);
+    border: none;
+    color: rgb(249, 248, 248);
+    box-shadow: 1px 2px 30px red;
+}
+.Banner img{
+    mix-blend-mode: exclusion;
+    box-shadow: 2px 1px 20px black;
+    height: 500px;
+}
+.Banner__Top{
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+}
+.Banner__Bot__text{text-align: center;}
+.Banner__Bot{
+    display: flex;
+    grid-template-columns: 6fr 4fr;
+    justify-content: space-between;
+    width: 100%;
+}
+.Banner__Bot img{
+    transform: translateY(-200px);  
+}
+.Title{
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    z-index: 2;
+
+}
+.Title__Top{
+    width: 100%;
+    transform: scale(6);
+    opacity: 0.2;
+    letter-spacing: 5px;
+    color: var(--acceint);
+    text-align: center;
+
+}
+.Title__Bot{
+    width: 100%;
+    text-align: center;
+    transform: scale(4);
+    opacity: 0.2;
+    letter-spacing: 8px;
+}
+/* =======================CARDS */
+.services{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ position: relative;
+ background-image: url('./assets/bgbot.jpeg');
+ background-size: cover;
+ background-position: center;
+ width: 100%;
+}
+.services img{
+    position: absolute;
+    left: 20px;
+    top: -350px;
+    height: 500px;
+    mix-blend-mode: exclusion;
+}
+.services h2{
+    margin: auto;
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+    color: var(--acceint);
+    margin-bottom: 25px;
+    backdrop-filter: blur(3px);
+    /* background: #000000; */
+    z-index: 3;
+}
+.services h3{
+    margin: auto;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 25px;
+    
+}
+.mainTariffsList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    width: 100%;
+
+}
+.mainTariff, .additionalTariff{
+    width: 100%;
+    height: 450px;
+    max-width: 420px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+    gap: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    position: relative;
+}
+.cardTitle{
+    position: absolute;
+    top: 20px;
+    font-size: 1.2rem;
+    color: var(--acceint);
+    height: 100px;
+}
+.cardPrice {
+  position: absolute;
+  top: 150px;
+    font-size: 1.8rem;
+    padding: 16px;
+    z-index: 3;
+    color: rgba(0, 255, 195, 0.856);
+}
+.carDur{
+    position: absolute;
+    top:  100px;
+    margin-bottom: 20px;
+    background-size: contain;
+    font-size: 1.8rem;
+
+}
+
+.additionalTariffsList{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.additionalTariff{
+    width: 320px;
+    background-color: rgba(0, 0, 0, 0.651);
+    border:none;
+    box-shadow: 1px 2px 20px red;
+    padding: 20px;
+    height: 320px;
+}
+.cardBtn{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 0, 0, 0.452);
+    background: transparent;
+    color: red;
+    transition: 0.5s ease-in-out;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 16px;
+}
+.cardBtn:hover{
+    box-shadow: 1px 2px 12px red;
+    background-color: rgba(255, 0, 0, 0.804);
+    background: transparent;
+    color: rgb(253, 253, 253);
+    border: none;
+}
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #1b191985;
+
+  }
+  
+  .modal-content {
+    margin: 15% auto;
+    top: 50px;
+    padding: 20px;
+    border-radius: 30px;
+    height: 400px;
+    border: 1px solid #d40505;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    position: relative;
+    background-color: #1b1919bd;
+    box-shadow: 1px 1px 30px var(--acceint);
+
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 40px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+  }
+  
+  /* Overlay Styles */
+  .overlay {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+  }
+  @media screen and (max-width:1220px) {
+    html{
+        font-size: 16px;
+    }
+    .Banner__Bot{
+        grid-template-columns: 3fr 3fr;
+       
+    }
+    .Banner img{
+        height: 400px;
+    }
+    .services img{
+        height: 400px;
+    }
+  }
+  @media screen and (max-width:980px) {
+    .Banner{
+       gap: 80px;
+    }
+    .Banner__Bot__text{
+        transform: translateY(-120px);
+    }
+    .Banner img{
+        height: 300px;
+    }
+    .services img{
+        top: -100px;
+        height: 300px;
+    }
+  }
+  @media screen and (max-width:799px) {
+    .Banner__Top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Banner__Bot{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Banner img{
+        width: 300px;
+    }
+    .services img{
+        top: -100px;
+        height: 300px;
+    }
+
+    .Title__Top{
+        transform: scale(3.5);
+        opacity: 0.2;
+    }
+    .Title__Bot{
+        transform: scale(1.6);
+    }
+    .mainTariff, .additionalTariff{
+        max-width: calc(100% - 32px);
+    }
+    .services h2{
+        margin: auto;
+        font-size: 2.5rem;
+    }
+    #leftImg{
+        display: none;
+    }
+}

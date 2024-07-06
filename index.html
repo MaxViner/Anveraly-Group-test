@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anverali_Group_test</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="content">
+        <section class="Banner">
+            <div class="Banner__Top">            
+                <img src="./assets/left.jpg" alt="" id="leftImg">
+                <p>
+                    4 основных пакета, и ещё пять вариантов дополнительных программ
+                    <button id="toCards">
+                        Выбрать программу
+                    </button>
+                </p>
+            </div>
+    
+            <div class="Banner__Bot" >
+                <p class="Banner__Bot__text">
+                    Начни свое преображение с <br>
+                    <span>
+                        MAX FIT
+                    </span>
+                </p>
+                <img src="./assets/right.jpg" alt="">            
+            </div>
+            <div class="Title">
+                <p class="Title__Top">MAX</p>
+                <p class="Title__Bot">FITNESS</p>
+            </div>
+        </section>
+        <section class="services">
+            <h2>Наши Тарифы</h2>
+            <h3>основные</h3>
+            <img src="./assets/bot.jpg" alt="">
+            <ul class="mainTariffsList">
+            </ul>
+            <h3>дополнительные</h3>
+            <ul class="additionalTariffsList">
+    
+            </ul>
+        </section>
+    </main>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Далее будет произведен перход на страницу заказа</p>
+        </div>
+      </div>
+      
+      <!-- Overlay HTML -->
+      <div id="overlay" class="overlay"></div>
+      <footer>
+        @CREATED BY MAXVINER 06.07.24 by Anveraly Group
+      </footer>
+<script defer src="./scripts/renderTariffCards.js"></script>
+<script defer src="./scripts/cluckEvents.js"></script>
+
+</body>
+</html>
